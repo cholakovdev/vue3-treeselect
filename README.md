@@ -1,9 +1,14 @@
 # vue3-treeselect
-[![npm](https://badgen.now.sh/npm/v/vue3-treeselect)](https://www.npmjs.com/package/vue3-treeselect)  [![Coverage](https://badgen.net/codecov/c/github/megafetis/vue3-treeselect)](https://codecov.io/gh/megafetis/vue3-treeselect?branch=main)
-![npm monthly downloads](https://badgen.now.sh/npm/dm/megafetis/vue3-treeselect)
- [![Known vulnerabilities](https://snyk.io/test/npm/megafetis/vue3-treeselect/badge.svg)](https://snyk.io/test/npm/megafetis/vue3-treeselect) ![License](https://badgen.net/github/license/megafetis/vue3-treeselect)
+[![npm](https://badgen.now.sh/npm/v/vue3-treeselect)](https://www.npmjs.com/package/vue3-treeselect)  [![Coverage](https://badgen.net/codecov/c/github/cholakovdev/vue3-treeselect)](https://codecov.io/gh/cholakovdev/vue3-treeselect?branch=main)
+![npm monthly downloads](https://badgen.now.sh/npm/dm/cholakovdev/vue3-treeselect)
+ [![Known vulnerabilities](https://snyk.io/test/npm/cholakovdev/vue3-treeselect/badge.svg)](https://snyk.io/test/npm/cholakovdev/vue3-treeselect) ![License](https://badgen.net/github/license/cholakovdev/vue3-treeselect)
 
 > A multi-select component with nested options support for Vue 3. Thank to [riophae](https://github.com/riophae/vue-treeselect) and his sources and library for vue 2 taken as basis.
+
+> Fixed Issues: <br>
+> Property "$createElement" was accessed during render but is not defined on instance <br/>
+> Failed to resolve component: transition<br>
+> Failed to resolve component: transition-group
 
 Breaking changes from his library:
 
@@ -31,7 +36,7 @@ Breaking changes from his library:
 It's recommended to install vue3-treeselect via npm, and build your app using a bundler like [webpack](https://webpack.js.org/).
 
 ```bash
-npm install --save vue3-treeselect
+npm install --save @cholakovdev/vue3-treeselect
 ```
 
 This example shows how to integrate vue3-treeselect with your [Vue SFCs](https://vuejs.org/v2/guide/single-file-components.html).
@@ -46,9 +51,9 @@ This example shows how to integrate vue3-treeselect with your [Vue SFCs](https:/
 
 <script>
   // import the component
-  import Treeselect from 'vue3-treeselect'
+  import Treeselect from '@cholakovdev/vue3-treeselect'
   // import the styles
-  import 'vue3-treeselect/dist/vue3-treeselect.css'
+  import '@cholakovdev/vue3-treeselect/dist/vue3-treeselect.css'
 
   export default {
     // register the component
@@ -89,8 +94,10 @@ If you just don't want to use webpack or any other bundlers, you can simply incl
     <!-- include Vue 2.x -->
     <script src="https://cdn.jsdelivr.net/npm/vue@next"></script>
     <!-- include vue-treeselect & its styles. you can change the version tag to better suit your needs. -->
+    <!-- todo -->
     <script src="https://cdn.jsdelivr.net/npm/vue3-treeselect@^0.1.0/dist/vue3-treeselect.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue3-treeselect@^0.1.0/dist/vue3-treeselect.min.css">
+   <!-- END todo -->
   </head>
   <body>
     <div id="app">
@@ -146,7 +153,7 @@ It should function well on IE9, but the style can be slightly broken due to the 
 
 ### Bugs
 
-You can [open an issue](https://github.com/megafetis/vue3-treeselect/issues/new).
+You can [open an issue](https://github.com/cholakovdev/vue3-treeselect/issues/new).
 
 ### Contributing
 
@@ -172,4 +179,4 @@ Some icons used in this project:
 
 ### License
 
-Released under the [MIT License](https://github.com/megafetis/vue3-treeselect/blob/master/LICENSE).
+Released under the [MIT License](https://github.com/cholakovdev/vue3-treeselect/blob/main/LICENSE.mit).

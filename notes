@@ -1,0 +1,7 @@
+If you need to make changes:
+1. Make the changes
+2. run npm run build
+3. Search and replace
+"var h = this.$createElement;"
+with
+"// var h = this.$createElement;"
